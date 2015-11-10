@@ -3,6 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
+  background-image: url("img/dancefloorbackground.jpg");
   background-color:#444;
   font-size: 18px;
 }
@@ -21,7 +22,15 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius:50px;
+  position:absolute;
+}
+.color {
+  width: 100px;
+  height: 100px;
+  background-color: green;
   position:absolute;
 }
