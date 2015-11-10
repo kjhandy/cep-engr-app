@@ -30,4 +30,5 @@ $(document).ready(function(){
     $('body').append(dancer.$node);
   });
 });
+   // $('.dancer').css("top": 100px, left:100px);
 

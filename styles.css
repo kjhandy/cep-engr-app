@@ -1,10 +1,16 @@
 body, html{
-  height:100%;
+  height: 100%;
 }
+
 body{
   margin: 0px;
-  background-image: url("img/dancefloorbackground.jpg");
+  background: url("img/dancefloorbackground.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color:#444;
+  width: 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -22,15 +28,26 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  width: 100px;
-  height: 100px;
-  background: red;
+  width: 200px;
+  height: 200px;
+  background: yellow;
   border-radius:50px;
-  position:absolute;
+  display: inline-block;
 }
 .color {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  position:absolute;
+  top: 50px !important;
+  left:50px !important;
+  height: 150px;
+  display: inline-block;
+  position:absolute !important;
 }
+.blinky{
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+.disco {
+  position: absolute !important;
+}
+

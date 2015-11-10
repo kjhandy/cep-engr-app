@@ -1,27 +1,47 @@
-var makeColorDancer = function(top, left, timeBetweenSteps, color) {
+var makeColorDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps)
-  this.$node = $('<span class="color"></span>');
+  // this.$node = $('<div class="dancer"></div>');
+  this.$node = $('<div class="color"><img src ="img/cat1.jpg" /></div>');
+  this.$node.draggable();
+  // this.$node.mouseover(function() {
+  //   this.$node.css('height', '400px');
+  // });
+this.$node.mouseover(function() {
+  $(this).animate({height: '+=100px'}, 1000)
+});
+this.$node.mouseover(function() {
+  $(this).css({background: 'blue'});
+});
+this.$node.mouseout(function() {
+  $(this).animate({height: '-=100px'}, 1000)
+});
+this.$node.mouseout(function() {
+  $(this).css({background: 'red'}, 1000)
+});
+
 }
 
 makeColorDancer.prototype = Object.create(MakeDancer.prototype);
 makeColorDancer.prototype.constructor = makeColorDancer;
 
-MakeDancer.prototype.step.call(this);
+// MakeDancer.prototype.step.call(this);
 
-makeBlinkyDancer.prototype.step = function(){
-    // call the old version of step at the beginning of any call to this new version of step
-    MakeDancer.prototype.step.call(this);
-
-    // toggle() is a jQuery method to show/hide the <span> tag.
-    // See http://api.jquery.com/category/effects/ for this and
-    // other effects you can use on a jQuery-wrapped html tag.
-    this.$node.toggle();
-  }
-
-// makeColorDancer.prototype.changeColor = function() {
-//   $(this).click(function() {
-//     $(this).css('background-color', 'yellow')
-//   });
+// makeColorDancer.lineUp = function() {
+//   $('document').click(function() {
+//     left = 50px;
+//   })
 // }
+
+// makeColorDancer.prototype.lineup = function() {
+//   $('documet').click(function() {
+//     left = 50px;
+//   }
+// }
+
+$('body').click(function(event) {
+  var mouseX = event.clientX;
+  var mouseY = event.clientY;
+  this.$node.css({top: mouseX, left: mouseY});
+  });
 
 
