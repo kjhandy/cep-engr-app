@@ -38,9 +38,9 @@ You will need to clone this [repo](https://github.com/kjhandy/cep-engr-app).
 
 ## Instructions
 
- For an example of this work, check out the .gif in the root directory.
+ For an example project, check out example.gif in the root directory.
 
- All of your files are in the `src` directory. You'll see that you have one file for HTML, one for CSS, and one for JavaScript.
+ All of your files are in the `src` directory. You'll see that you have one file for HTML, one for CSS, and one for JavaScript. You also have an `img` directory to store any images that you use.
 
  Here are the mandatory guidelines:
 
