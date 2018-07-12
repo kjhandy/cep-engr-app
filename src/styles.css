@@ -1,0 +1,66 @@
+.topbar {
+  background: url("../img/background2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 400px;
+  opacity: 0.8;
+}
+
+.header {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.tagline {
+  font-family: 'Calligraffitti', cursive;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.headshot {
+  float: left;
+  width: 45%;
+  padding-top: 50px;
+}
+
+.headshot img {
+  height: 400px;
+  border-radius: 40%;
+  padding-left: 60px;
+}
+
+.aboutme {
+  float: right;
+  width: 45%;
+  padding: 60px;
+  padding-bottom: 30px;
+  font-family: Helvetica;
+}
+
+.btn-text {
+  color: white;
+  font-size: 20px;
+}
+
+.infoButton {
+  background: #104396;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: inline;
+  margin-top: 10px;
+}
+
+.info-btn-text {
+  color: white;
+  font-size: 12px;
+}
+
+.info-text {
+  padding-left: 20px;
+}

@@ -1,34 +1,30 @@
-$(document).ready(function(){
-  window.dancers = [];
+// create a JavaScript object here with the following fields: firstName, lastName, jobTitle, homeOffice
+  var info = {
+    firstName: 'Kayla',
+    lastName: 'Handy',
+    jobTitle: 'Software Engineer',
+    homeOffice: 'Austin - Domain'
+  }
 
-  $(".addDancerButton").on("click", function(event){
-    /* This function sets up the click handlers for the create-dancer
-     * buttons on dancefloor.html. You should only need to make one small change to it.
-     * As long as the "data-dancer-maker-function-name" attribute of a
-     * class="addDancerButton" DOM node matches one of the names of the
-     * maker functions available in the global scope, clicking that node
-     * will call the function to make the dancer.
-     */
+  // using jQuery and the object above, display the information as the appropriate button is clicked
 
-    /* dancerMakerFunctionName is a string which must match
-     * one of the dancer maker functions available in global scope.
-     * A new object of the given type will be created and added
-     * to the stage.
-     */
-    var dancerMakerFunctionName = $(this).data("dancer-maker-function-name");
-
-    // get the maker function for the kind of dancer we're supposed to make
-    var dancerMakerFunction = window[dancerMakerFunctionName];
-
-    // make a dancer with a random position
-
-    var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
-      Math.random() * 1000
-    );
-    $('body').append(dancer.$node);
+  $(".tellMeMoreButton").on("click", function() {
+    $(".aboutme").html("Six years ago, I was sitting in my office at Sparks Consulting Group, a marketing firm based in D.C. I was talking to one of my clients, who mentioned that the product page of their website was down. As a small start-up, they didn't have anyone on staff to fix it, so I volunteered to Google around and give it a shot. A couple hours in, I finally found the culprit -- a broken link. And from that day on, I was hooked. After a couple of years of dabbling in online tutorials, I found Hack Reactor. I applied, got accepted, spent 4 wonderful months completely immersed in code, and got hired at HomeAway three weeks after graduating.");
   });
-});
-   // $('.dancer').css("top": 100px, left:100px);
 
+  $(".firstNameButton").on("click", function() {
+    $(".firstName").html(info.firstName);
+  });
+
+  $(".lastNameButton").on("click", function() {
+    $(".lastName").html(info.lastName);
+  });
+
+  $(".jobTitleButton").on("click", function() {
+    $(".jobTitle").html(info.jobTitle);
+  });
+
+  $(".homeOfficeButton").on("click", function() {
+    $(".homeOffice").html(info.homeOffice);
+  });
+// });
