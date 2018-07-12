@@ -31,7 +31,7 @@ You will need to clone this [repo](https://github.com/kjhandy/cep-engr-app).
 7. Let's add our first repo to the Projects directory. Navigate to the [repo](https://github.com/kjhandy/cep-engr-app).
 8. In the top right corner, click on the button that says "Fork" and then select your github.
 9. Click on the green button that says "Clone or download" and copy the link.
-10. On the command line, type in `git clone ${INSERT LINK}` replacing the 'Insert Link' with the link you just copied.
+10. On the command line, type in `git clone INSERT LINK` replacing the `Insert Link` with the link you just copied.
 8. Once it's downloaded, if you type in `ls` again, you'll notice that your project was added to the directory.
 9. Navigate into that project by typing `cd cep-engr-app`.
 10. Open up the project with your editor.
@@ -59,7 +59,7 @@ You will need to clone this [repo](https://github.com/kjhandy/cep-engr-app).
 
  - On the command line, type in `git status`. You'll see all of the files that you have created or changed.
  - Type in `git add .` to add all of those files to your commit.
- - Type in `git commit -m "{message}"` replacing 'message' with your commit message.
+ - Type in `git commit -m "MESSAGE"` replacing `MESSAGE` with your commit message.
  - Type in `git push origin master` to push up all of your work.
 
 ### Resources
