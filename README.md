@@ -16,7 +16,7 @@ This is where you will store your finished application. When you're doing with t
 
 ### Downloading an editor
 
-You'll need a code editor in order to complete the project. There are many out there - IntelliJ, Sublime, Atom, etc. If you have a preference, feel free to use it. If not, [Atom](https://atom.io/) is a good choice. Choose your favorite and download it.
+You'll need a code editor in order to complete the project. There are many out there - Sublime, Atom, etc. If you have a preference, feel free to use it. If not, [Atom](https://atom.io/) is a good choice. Choose your favorite and download it.
 
 ### Cloning the repo
 
